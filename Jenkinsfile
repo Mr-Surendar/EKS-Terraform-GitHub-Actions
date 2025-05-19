@@ -32,7 +32,7 @@ pipeline {
         stage('Validate') {
             steps {
                 withAWS(credentials: 'aws-creds', region: 'us-east-1') {
-                sh 'terraform -chdir=eks/ validate -migrate-state'
+                sh 'terraform -chdir=eks/ validate'
                 }
             }
         }
