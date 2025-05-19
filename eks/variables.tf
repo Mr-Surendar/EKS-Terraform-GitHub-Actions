@@ -1,4 +1,9 @@
-variable "aws-region" {}
+variable "aws-region" {
+   description = "The AWS region to deploy resources in"
+  type        = string
+  default     = "us-east-1"
+}
+
 variable "env" {}
 variable "cluster-name" {}
 variable "vpc-cidr-block" {}
