@@ -12,7 +12,7 @@ terraform {
     bucket         = "surendar13"
     key            = "eks/terraform.tfstate"
     region         = "us-east-1"
-    use_lockfile { table = "my-lock-table" }
+    dynamodb_table = "my-lock-table"
     encrypt        = true
   }
 }
