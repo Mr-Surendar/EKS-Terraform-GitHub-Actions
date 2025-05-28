@@ -9,10 +9,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "surendar13"
-    key            = "eks/terraform.tfstate"
-    region         = "us-east-1"
-    dynamodb_table = "Lock-Files"
+    bucket         = "surendar13"          
+    key            = "eks/terraform.tfstate" 
+    region         = "ap-south-1"         
+    dynamodb_table = "Lock-Files"  
     encrypt        = true
   }
 }
